@@ -1,0 +1,253 @@
+@font-face {
+  font-family: josefin;
+  src: url(../font/JosefinSans-Regular.ttf);
+}
+@font-face {
+  font-family: zeyada;
+  src: url(../font/Zeyada-Regular.ttf);
+}
+* {
+  font-family: josefin !important;
+}
+
+.div-bg {
+  background-color: #fff6e3;
+}
+
+.div-text > h2 {
+  font-size: 70px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.div-text > h3 {
+  font-family: zeyada !important;
+  font-size: 40px;
+  color: #ff452b;
+  font-weight: bold;
+  position: relative;
+  top: 55px;
+}
+.div-text > p {
+  font-size: 20px;
+}
+
+main > .head {
+  background-color: #fff6e3;
+}
+@media screen and (max-width: 992px) {
+  main > .head > figure {
+    justify-content: center;
+  }
+}
+main > .head > figure > img {
+  height: 100vh;
+  width: 75%;
+  transform: scaleX(-1);
+}
+@media screen and (max-width: 992px) {
+  main > .head > figure > img {
+    width: 50%;
+    height: 80vh;
+  }
+}
+main > .head > div > h1 {
+  font-size: 80px;
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+}
+main > .head > div > h1::after {
+  content: "Haniye Akbari";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #fff6e3;
+  left: 0;
+  top: -15%;
+  font-size: 110px;
+  z-index: -1;
+  font-weight: bolder;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.8), -1px -1px rgba(0, 0, 0, 0.8);
+  opacity: 0.1;
+}
+main > .head > div > h2 {
+  font-family: zeyada !important;
+  font-size: 40px;
+  color: #ff452b;
+  font-weight: bold;
+}
+main > .head > div > .icon > a {
+  color: black;
+  transition: 0.5s;
+}
+main > .head > div > .icon > a:hover {
+  color: #ff452b;
+}
+main > .head > div > .icon > a i {
+  margin: 10px;
+  font-size: 30px;
+}
+main > .list > div > h2 {
+  font-size: 70px;
+  font-weight: bold;
+}
+main > .list > div > nav {
+  background-color: #fff6e3;
+  padding-top: 30px;
+  height: 100vh;
+}
+main > .list > div > nav > ul {
+  width: 100%;
+  height: 100%;
+  padding-top: 15vh;
+}
+main > .list > div > nav > ul > li > a {
+  font-size: 35px;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+}
+main > .list > div > nav > ul > li > a:hover {
+  text-shadow: 0 0 30px rgba(255, 68, 43, 0.6392156863);
+}
+main > .first-page > div > figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff6e3;
+}
+@media screen and (max-width: 992px) {
+  main > .first-page > div > figure {
+    height: 80vh;
+  }
+}
+main > .first-page > div > figure > img {
+  width: 60%;
+  height: 90%;
+  padding-top: 40px;
+}
+main > .first-page > div > p {
+  font-size: 20px;
+}
+main > .first-page > div > p > span {
+  color: #ff452b;
+  font-weight: bold;
+}
+main > .second-page > div > figure {
+  height: 70vh;
+  padding-top: 50px;
+  position: relative;
+}
+main > .second-page > div > figure > img {
+  width: 80%;
+}
+main > .page-3 > .skills {
+  height: 70vh;
+}
+main > .page-3 > .skills > div > figure {
+  width: 25%;
+  height: 20%;
+}
+main > .page-3 > .skills > div > figure > img {
+  width: 100%;
+}
+main > .page-3 > .skills > div > div {
+  width: 25%;
+  height: 30px;
+  text-align: center;
+  font-family: zeyada !important;
+  position: relative;
+  font-size: 25px;
+  font-weight: bold;
+}
+main > .page-3 > .skills > div > div::after {
+  content: "";
+  width: 0;
+  height: 20%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  border-top: 10px solid #ff452b;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+main > .page-3 > .skills > div > div:nth-of-type(1):hover::after {
+  width: 90%;
+}
+main > .page-3 > .skills > div > div:nth-of-type(2):hover::after {
+  width: 85%;
+}
+main > .page-3 > .skills > div > div:nth-of-type(3):hover::after {
+  width: 80%;
+}
+main > .page-3 > .skills > div > div:nth-of-type(4):hover::after {
+  width: 70%;
+}
+main > .page-4 > .edu {
+  background-color: #fff6e3;
+  height: 100vh;
+}
+@media screen and (max-width: 992px) {
+  main > .page-4 > .edu {
+    height: 60vh;
+  }
+}
+main > .page-5 > .video > a {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 40vw;
+  margin-top: 10px;
+  padding: 10px;
+  border: 2px solid #2d2d2d;
+}
+@media screen and (max-width: 992px) {
+  main > .page-5 > .video > a {
+    width: 60vw;
+  }
+}
+main > .page-5 > .video > a > video {
+  width: 100%;
+}
+main > #contact > .icon > a {
+  color: black;
+  transition: 0.5s;
+}
+main > #contact > .icon > a:hover {
+  color: #ff452b;
+}
+main > #contact > .icon > a i {
+  margin: 10px;
+  font-size: 30px;
+}
+main > #contact > .div-bg {
+  margin-top: 20px;
+}
+main > #contact > .div-bg > form > * {
+  margin: 5px;
+}
+main > #contact > .div-bg > form > input, main > #contact > .div-bg > form > textarea {
+  color: #2d2d2d;
+  border: 2px solid rgba(45, 45, 45, 0.3333333333);
+  border-radius: 30px;
+  height: 50px;
+}
+main > #contact > .div-bg > form > input:focus, main > #contact > .div-bg > form > textarea:focus {
+  border: 2px solid #ff452b;
+  outline: none;
+}
+main > #contact > .div-bg > form > input::-moz-placeholder, main > #contact > .div-bg > form > textarea::-moz-placeholder {
+  color: rgba(255, 68, 43, 0.6470588235);
+}
+main > #contact > .div-bg > form > input::placeholder, main > #contact > .div-bg > form > textarea::placeholder {
+  color: rgba(255, 68, 43, 0.6470588235);
+}
+main > #contact > .div-bg > form > textarea {
+  height: 100px;
+}
+main > #contact > .div-bg > form > button {
+  border-radius: 30px;
+  font-size: 25px;
+}/*# sourceMappingURL=master1.css.map */
